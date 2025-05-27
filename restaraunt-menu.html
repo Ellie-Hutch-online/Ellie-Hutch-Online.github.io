@@ -1,32 +1,100 @@
 <!DOCTYPE html>
-<html> 
- <head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-  <meta name= "viewport" content="width=device-width, initiial scale=1.0"> 
-  <title> Ellie's Cafe Menu</title>
- </head>
-<body> 
-  <div style="width:400px;  height:550px; margin: auto; padding: 10px; border-style: solid; border-width:madium;
-   border-color: rgb(0,0,0); background-image: url (href="https://www.flickr.com/photos/10559879@N00/4980640843">Poached Egg on Toast)    
- <h1> Breakfast</h1>
-   <ul>
-    <li>Avocado Toast</li>
-    <li>Eggs Benedict</li>
-    <li>Asisgo Bagel</li>
-    <li>The Works</li>
-   </ul>
-   <div style="width:400px; height:550px; margin:auto; padding:10px; border-style: solid; border-width: medium;
-    border-color: rgb(0,0,0); background-image: url (href=
- <h2> Lunch</h2> 
- <ul> 
-    <li>Chicken Sandwich</li>
-    <li>Burger</li> 
-    <li>Grilled Cheese</li> 
-    <li> Mac n Cheese</li> 
- </ul>
- <h3>Dinner/h3>
-  <ul>
-    <li></li>
-  </ul>
+  <title>Restaurant Menus</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      background-color: #f8f8f8;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .menu {
+      width: 400px;
+      height: 550px;
+      padding: 20px;
+      border: 4px solid #333;
+      margin: 10px;
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+     overflow-y: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 18px;
+      margin-bottom: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    /* Unique backgrounds and properties */
+    .breakfast {
+      background-image: url('https://images.unsplash.com/photo-1580910051073-d6cfb843f84c');
+      background-repeat: no-repeat;
+    }
+
+    .lunch {
+      background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe');
+      background-position: top;
+    }
+
+    .dinner {
+      background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="menu breakfast">
+    <h2>Breakfast Menu</h2>
+    <ul>
+      <li>Pancakes with Syrup</li>
+      <li>Eggs Benedict</li>
+      <li>Chocolate Peanut Butter Smoothie</li>
+      <li>Yogurt Parfait</li>
+      <li>Fresh Orange Juice</li>
+    </ul>
+  </div>
+
+  <div class="menu lunch">
+    <h2>Lunch Menu</h2>
+    <ul>
+      <li>Grilled Cheese Sandwich</li>
+      <li>Caesar Salad</li>
+      <li>Tomato Basil Soup</li>
+      <li>Iced Tea</li>
+      <li>Mac and Cheese</li>
+    </ul>
+  </div>
+
+  <div class="menu dinner">
+    <h2>Dinner Menu</h2>
+    <ul>
+      <li>Steak with Garlic Mashed Potatoes</li>
+      <li>Grilled Chicken</li>
+      <li>Chicken Parm pasta</li>
+      <li>Margarita</li>
+      <li>Red Velvet Cupcake</li>
+    </ul>
+  </div>
+
 </body>
 </html>
